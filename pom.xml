@@ -16,7 +16,8 @@
 	<properties>
 		<java.version>12</java.version>
 		<spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-<!--		<spring-cloud.version>2021.0.8</spring-cloud.version>-->
+		<!-- se cambia la version proq ue no es comatible con zuul
+		<spring-cloud.version>2021.0.8</spring-cloud.version>-->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,7 +28,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
